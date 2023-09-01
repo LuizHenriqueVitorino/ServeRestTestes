@@ -2,7 +2,7 @@
 
 Este projeto visa testar os endpoints e as funções da API pública serveRest utilizando o Robot Framework e as bibliotecas RequestLibrary, FakerLibrary e Collection.
 
-## Instalação
+## Dependências
 
 Para executar os testes deste projeto, você precisará do Robot Framework, juntamente com as bibliotecas de suporte. Certifique-se de ter o Python instalado no seu sistema.
 
@@ -11,13 +11,25 @@ Para executar os testes deste projeto, você precisará do Robot Framework, junt
    ```
     pip install robotframework
    ```
+
 2. Instale a biblioteca RequestsLibrary para fazer solicitações HTTP:
-    ```
-    pip install robotframework-requests
-    ```
+   ```
+   pip install robotframework-requests
+   ```
 3. Instale a biblioteca FakerLibrary para gerar dados falsos:
 
-    ```
-    pip install robotframework-faker
-    ```
+   ```
+   pip install robotframework-faker
+   ```
 
+## Execução do teste
+
+1. Vá para a raíz do projeto;
+2. Para rodar um comando em robot, precisa-se escrever
+   ```
+       robot -d PATH/DO/RELATÓRIO PATH/DO/ARQUIVO/DE/TESTE
+   ```
+   No nosso exemplo, se você estiver na raíz do SERVERESTTESTE deve rodar o comando:
+   ```
+       robot -d Resultados Testes/GET_produtos_keywords.robot
+   ```
