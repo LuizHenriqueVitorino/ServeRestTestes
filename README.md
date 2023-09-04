@@ -21,6 +21,10 @@ Para executar os testes deste projeto, você precisará do Robot Framework, junt
    ```
    pip install robotframework-faker
    ```
+4. Para que o teste do skimage funcione corretamente, você também precisa instalar a dependência
+   ```
+   pip install scikit-image
+   ```
 
 ## Execução do teste
 
